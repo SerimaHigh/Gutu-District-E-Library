@@ -1,0 +1,232 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Serima High School E-Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e6f2ff;
+            margin: 0; padding: 0;
+            color: #00334d;
+        }
+        header {
+            background-color: #3399ff;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .search-box {
+            max-width: 600px;
+            margin: 2rem auto 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        .search-box input {
+            padding: 0.7rem 1rem;
+            width: 100%;
+            font-size: 1rem;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+        }
+        main {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 1300px;
+            margin: auto;
+        }
+        .category {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+        }
+        .category h2 {
+            color: #0066cc;
+            border-bottom: 2px solid #cce6ff;
+            padding-bottom: 0.3rem;
+        }
+        ul { list-style: none; padding: 0; }
+        ul li { margin: 0.6rem 0; }
+        a {
+            text-decoration: none;
+            color: #00509e;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        a:hover { color: #003366; }
+        footer {
+            text-align: center;
+            background-color: #3399ff;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+		 section {
+      background-image: url('E:\LIBRARY BOOKS\science.jpg');
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat;
+      
+    }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gutu District Group of Schools E-Library</h1>
+        <p>Explore and Search Through Our Digital Book Collection</p>
+    </header>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for a subject..." onkeyup="filterBooks()">
+    </div>
+    <main id="bookList">
+        <section class="category"><h2>SCIENCE</h2><ul>
+		
+    <table>
+        <thead>
+            <tr>
+               
+                <th>A Level</th>
+                <th>O Level</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EoDV-xGSKaFOh-kDXkvTguMBV7q_AJllNowyAgqQW4cxXg?e=2lyIPt" target="_blank">Computer Science</a></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EuOXro9JmDNJnF_-283ygyQBDpfAqC7voUVksWLmE-A7Jg?e=UvIZct" target="_blank">Biology</a></td>
+               
+            </tr>
+            <tr>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EpPwKEE2ib5KosbBpbRKO6cBFsRL4zZojpkUH8XEr0I_3Q?e=mXv02J" target="_blank">Chemistry</a></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EkAAr3iMWNBEl3U1z7vx1AIBHaKCCasNlQQNqTD9j3wRKg?e=1N1Ybd" target="_blank">Combined Science</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EpIvdnAumVNIvBdI7lTB6O4B__4l_bqi7mjR9YPeWnXJlw?e=xcPtQs" target="_blank">Physics</a></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EsDND0qsKLNGsMZYAU7HvYUBAnXHq7CxIDTiscFcnzRCKg?e=PfZ1AJ" target="_blank">Chemistry</a></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/Et7mxBZNOKxNq_iO_WvH1YEBj68BCVhsVA9HBJkiMwLtHQ?e=Jx4uO4" target="_blank">Physics</a></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/En2rUJB29IFEoaq_gepHRLABaCPJjbEbKkTI4xz_vUrNPg?e=OLWUbR" target="_blank">Computer Science</a></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/ErOI5VC3o8RFsIyhKIE79SQBnV_28lj0SIDH1o7RCKAPFQ?e=d3LmgP" target="_blank">Agriculture</a></td>
+            </tr>
+        </tbody>
+    </table>
+           
+        </ul></section>
+        
+		
+        </ul></section>
+        <section class="category"><h2>MATHEMATICS</h2><ul>
+                <table>
+        <thead>
+            <tr>
+               
+                <th>A Level</th>
+                <th>O Level</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EudL2KibO1JEjB0-M6PBxDMBWjOr2WER7_ElpWJU31FTvQ?e=rVn8GJ" target="_blank">Pure Mathematics</a></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/Epr9noXNoSdJl3Yf90e3mxMBeIDY27C8CNyB0u8t73HrPA?e=5G8gjq" target="_blank">General Mathematics</a></td>
+               
+            </tr>
+           
+        </tbody>
+    </table>
+			
+            
+        </ul></section>
+        <section class="category"><h2>ARTS</h2><ul>
+               <table>
+        <thead>
+            <tr>
+               
+                <th>A Level</th>
+                <th>O Level</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/Eh6-d_mtAuhDhQ0E9O44tfUB8-802ZSQF3SxtZW6oK4_Dw?e=hqiFBD" target="_blank">FRS</a></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EtUG6iiPdFdDglv728srU9IB-5I1Q5Qj2Cw-kOxePy2qnA?e=dauxdv" target="_blank">Heritage</a></td>
+               
+            </tr>
+			<tr>
+			<td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/El6mwcgluAZFjlyRcsEfMowBy2o9wOkYmuLgCb1jtspKOw?e=cjQUs8" target="_blank">History</a></td>
+			<td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EvqIA4XbbJRFqD3ZG2-BH7ABIJ3Y_JlwmhKZrQpl30BTWA?e=mdn728" target="_blank">FRS</a></td>
+			</tr>
+          <tr>
+			<td> </td>
+			<td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EoD0ocY-vutDrIfIZsfBrBoBcxuY2lb_TM2HTc4sRPm-yA?e=A5PK25" target="_blank">History</a></td>
+			</tr>
+			<tr>
+			<td> </td>
+			<td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/EuooBAf8QmFIm2rITt2xAxoBhIP3mhYp6ZRnBglTeZWeAA?e=W8D2xv" target="_blank">English</a></td>
+			</tr>
+        </tbody>
+    </table>
+        </ul></section>
+        <section class="category"><h2> COMMERCIALS </h2><ul>
+		    <table>
+        <thead>
+            <tr>
+               
+                <th>A Level</th>
+                <th>O Level</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/ErXbUDmoqLRGhUR5dHIQPjEBKHwMrC_G_BaAFRgFfmObgg?e=aTsw6K" target="_blank">BES</a></td>
+                <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/Ei1CBHhD1SZMlCHSVkJwQ5EByfUMrSZ73_QgW1VOS03Grw?e=imQKhY" target="_blank">Accounts</a></td>
+               
+            </tr>
+           <tr>
+		   <td><a href="https://1drv.ms/f/c/11f4be6746ef22e9/Er1_neCpxF5Iu4v87VRpTt4BILtz-FcfJzoODy2ufSGeGQ?e=cn4tJ7" target="_blank">Accounting</a></td>
+		   <td></td>
+		   </tr>
+        </tbody>
+    </table>
+             
+        </ul></section>
+    </main>
+    <footer>
+	<p>You can contact us on: Email: serimahigh1@hotmail.com</p>
+        <p>&copy; 2025 Serima High School | E-Library System</p>
+		
+    </footer>
+    <script>
+        function filterBooks() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const books = document.querySelectorAll('#bookList a');
+            books.forEach(book => {
+                const text = book.textContent.toLowerCase();
+                book.parentElement.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
